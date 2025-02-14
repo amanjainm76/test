@@ -22,7 +22,7 @@ const userRoutes = require("./router/userRoutes");
 const connectDb = require("./utils/db");
 const errorMiddleware = require("./middleware/error-middleware");
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors());
 app.use(express.json());
 app.use(errorMiddleware);
 
